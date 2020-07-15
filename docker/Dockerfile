@@ -1,9 +1,11 @@
 FROM ubuntu:16.04
-LABEL Maintainer: @jrswab
+LABEL Maintainer: @jrswab - @relaylogix
 
 RUN apt-get update \
 	&& apt-get install -y \
 		bash \ 
+		curl \
+		git \
 		wget \
 		jq \ 
 		vim \
