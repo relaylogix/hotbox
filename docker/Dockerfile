@@ -33,6 +33,7 @@ USER witness
 WORKDIR /home/witness/
 
 COPY config/ /home/witness/.config/
+COPY kief/ /home/witness/kief/
 COPY wallet.sh /home/witness/
 COPY smoked.sh /home/witness/
 COPY config.sh /home/witness/
