@@ -79,7 +79,7 @@ session="Hotbox | ctrl+h to leave | ctrl+b then a number to swich windows"
 tmux start-server
 
 # create a new tmux session, starting vim from a saved session in the new window
-tmux new-session -d -s "$session"
+tmux new-session -d -s "$session" -n smoke
 
 # create a new window called scratch
 tmux new-window -t "$session":1 -n wallet
