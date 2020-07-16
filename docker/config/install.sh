@@ -84,6 +84,9 @@ tmux new-session -d -s "$session"
 # create a new window called scratch
 tmux new-window -t "$session":1 -n wallet
 
+# create a new window called scratch
+tmux new-window -t "$session":2 -n kief
+
 # return to main vim window
 tmux select-window -t "$session":0
 
